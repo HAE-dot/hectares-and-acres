@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Hectares & Acres Enterprise</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+        <path d="M2 22L13 4L24 22" stroke="#B08D3E" stroke-width="1.6"/>
+        <path d="M6.5 22L13 11L19.5 22" stroke="#FBF9F2" stroke-width="1.6"/>
+        <circle cx="13" cy="4" r="1.6" fill="#B08D3E"/>
+      </svg>
+      <span>Hectares &amp; Acres<span class="sub">Enterprise</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:64px 0 56px;">
+  <svg class="contour-field" viewBox="0 0 1120 320" preserveAspectRatio="none">
+    <g fill="none" stroke="#FBF9F2" stroke-opacity="0.06" stroke-width="1">
+      <path d="M-50,60 C 200,10 400,110 650,60 S 1000,20 1200,70"/>
+      <path d="M-50,120 C 200,70 400,170 650,120 S 1000,80 1200,130"/>
+    </g>
+  </svg>
+  <div class="wrap" style="grid-template-columns:1fr;">
+    <div>
+      <span class="eyebrow">Get in touch</span>
+      <h1 style="max-width:20ch;">Let's talk about your ground.</h1>
+      <p class="lede">Reach out about farming, a land purchase, a survey, or a gold claim — we'll point you to the right consultant.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact-grid">
+
+    <div class="contact-card">
+      <h3>Reach us directly</h3>
+      <div class="field-row"><span class="k">Phone</span><span class="v">0537 308 480 / 0530 512 047</span></div>
+      <div class="field-row"><span class="k">Email</span><span class="v">ahectares@yahoo.com / ahectares@gmail.com</span></div>
+      <div class="field-row"><span class="k">Address</span><span class="v">No. 10A Pawa House Rd, Roman Ridge</span></div>
+      <div class="field-row"><span class="k">Hours</span><span class="v">Mon–Sat, 8:00–17:00</span></div>
+    </div>
+
+    <div class="contact-card">
+      <h3>Send a message</h3>
+      <form class="contact-form" action="mailto:ahectares@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="service">What do you need help with?</label>
+        <input type="text" id="service" name="service" placeholder="e.g. Land survey, architectural design, gold claim, farm advisory">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn btn-primary" style="border:none; cursor:pointer;">Send message</button>
+      </form>
+      <p style="margin-top:14px; font-family:var(--mono); font-size:0.72rem; color:var(--clay);">
+        Note: this form opens the visitor's email app. For a form that submits without opening email, connect a free service like Formspree.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Hectares &amp; Acres Enterprise. All rights reserved.</span>
+    <span class="mono">FARMING · LAND SALES · SURVEYING · ARCHITECTURE · GOLD MINING</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
